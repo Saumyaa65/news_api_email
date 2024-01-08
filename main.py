@@ -1,9 +1,8 @@
 import requests
 from send_email import send_email
-import os
 
 topic="cars"
-api=os.getenv("API")
+api="c414ec4eb6ff4517b78d751a39b3f4a7"
 url= (f"https://newsapi.org/v2/everything?q={topic}&sortBy="
       f"publishedAt&apiKey={api}&language=en")
 
